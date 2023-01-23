@@ -1,176 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Curriculam Vitae</title>
-    <link rel = "stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Portfolio Website</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive_style.css">
 
 </head>
-<body>
-   <div class="container">
-    <header>
-       
-       <div class="header-bio">
-        <h1>MST BIZLI KHATUN </h1>
-        <h3>Web Developer</h3>
 
-       </div >
-       
-       <div class="header-contact">
-        <p><a href="mailto:khatunbizli892@gmail.com">Email:khatunbizli892@gmail.com</a></p>
-        <p><a href="https://github.com/BizliCSE123">Github:BizliCSE123</a></p>
-        <p><a href="tel:01752862343">Phone:01752862343</a></p>
-       </div>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                </a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn" href="#contact">Hire Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div class="div-clear">
-        
-    </div>
-    <hr>
-    <main>
-        <section id = "personal-section"> 
-            <div class = "content">
-                <div class = "left-div">
-                    <h3>Personal Information</h3>
-                    
-                </div>
-                <div class ="right-div">
-                    Address:Puthia,Rajshahi,Bangladesh<br>
-                    Sex:Female<br>
-                    Date of Birth:23/12/2000<br>
-                    Nationality:Bangladeshi<br>
+    <!-- Navbar section exit -->
 
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center text-md-start">
+                    <h6>WELCOME TO MY WORLD</h6>
+                    <h1>I am Mst Bizli Khatun<br><span>Web Developer.</span><br>based in Bangladesh.</h1>
+                    <div class="mt-4">
+                        <a class="main-btn" href="resume/resume.docx">Download CV</a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- Banner section exit -->
 
-        </section>
-        <div class="div-clear"></div>
-        <hr class="common-hr">
-        <section id = "Work-section"> 
-            <div class = "content">
-                <div class = "left-div">
-                    <h3>Work Experience</h3>
-                    
+    <!-- About section -->
+    <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="image/pic.jpg" class="img-fluid rounded-3" alt="About Us">
                 </div>
-                <div class ="right-div">
-                   <h3>Internship at ABC Company</h3>
-                   <h5>2020-2021</h5>
-                   <p>One year Internship in ABC company as a web developer.</p>
-
+                <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+                    <div class="my-3 my-lg-0">
+                        <span class="subtitle">My About Details</span>
+                        <h2>About Me</h2>
+                        <p>I am able to handle multiple tasks on a daily basis.I am always energetic and eager to learn new skills.I am always on time for organized events, work-related or otherwise.</p>
+                    </div>
+                    <div class="pt-4">
+                        <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill"
+                                    aria-selected="true">Main Skills</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Award-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Award" type="button" role="tab" aria-controls="pills-Award"
+                                    aria-selected="false">Awards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-experiance-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-experiance" type="button" role="tab"
+                                    aria-controls="pills-experiance" aria-selected="false">Experiance</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-education" type="button" role="tab"
+                                    aria-controls="pills-education" aria-selected="false">Education</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-skill" role="tabpanel"
+                                aria-labelledby="pills-skill-tab">
+                                <div class="single-progress">
+                                    <h6>Designing</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label">95%</span>
+                                </div>
+                                <div class="single-progress">
+                                    <h6>Managment</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label">85%</span>
+                                </div>
+                                <div class="single-progress">
+                                    <h6>Marketing</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label">75%</span>
+                                </div>
+                                <div class="single-progress">
+                                    <h6>Development</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label">80%</span>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-Award" role="tabpanel"
+                                aria-labelledby="pills-Award-tab">
+                                <ul class="text-start ps-0">
+                                    <li><a href="#">Awwwards.com
+                                            <span>- Winner</span></a>  2020
+                                    </li>
+                                    <li><a href="#">CSS Design Awards
+                                            <span>- Winner</span></a> 2021
+                                    </li>
+                                    <li><a href="#">Design nominees
+                                            <span>- site of the
+                                                day</span></a> 2021
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-experiance" role="tabpanel"
+                                aria-labelledby="pills-experiance-tab">
+                                <ul class="text-start ps-0">
+                                    <li><a href="#">Sr. Front-end
+                                            Engineer<span> -
+                                                ABC Company</span></a> 2020 - Current
+                                    </li>
+                                    <li><a href="#">Front-end
+                                            Engineer<span> -
+                                                XYZ Company</span></a> 2020 - 2021
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-education" role="tabpanel"
+                                aria-labelledby="pills-education-tab">
+                                <ul class="text-start ps-0">
+                                    <li><a href="#">BSc In CSE<span>
+                                                - University of Rajshahi</span></a> 2025
+                                    </li>
+                                    <li><a href="#">HSc<span> - Board of Rajshahi</span></a> 20018
+                                    </li>
+                                    <li><a href="#">SSC<span> - Board of Rajshahi</span></a> 2007
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-        </section>
-        <div class="div-clear"></div>
-        <hr class="common-hr">
-    
-    <section id = "Skills-section"> 
-        <div class = "content">
-            <div class = "left-div">
-                <h3>My Skills</h3>
-                
-            </div>
-            <div class ="right-div">
-                
-                <ul>
-                    <li>Programming Languages : 
-                        Python, Java, C++</li>
-                    <li>Frontend : HTML5, CSS3, 
-                        JavaScript, React</li>
-                    <li>Backend : Node.js</li>
-                </ul>
-      
 
             </div>
         </div>
-
     </section>
-    <div class="div-clear"></div>
-    <hr class="common-hr">
-    <section id = "personal-section"> 
-        <div class = "content">
-            <div class = "left-div">
-                <h3>Languages</h3>
-                
+    <!-- About section exit -->
+
+    <!-- Services section -->
+    <section id="services" class="services_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle">What I can do for you</span>
+                    <h2>My Awesome Service</h2>
+                    <p>There are many service ,<br class="d-none d-md-block">
+                        that I can provide you.</p>
+                </div>
             </div>
-            <div class ="right-div">
-                <ul>
-                    <li>English</li>
-                    <li>Bangla</li>
-                </ul>
-               
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-md-start text-center">
+                            <h3>Business Stratagy</h3>
+                            <p>I can help your business Stratagy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-md-start text-center">
+                            <h3>Website Development</h3>
+                            <p>I can develop your website.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-md-start text-center">
+                            <h3>Marketing & Reporting</h3>
+                            <p>I am good at Marketing and Reporting .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-md-start text-center">
+                            <h3>Mobile App Development</h3>
+                            <p>I am also expert at Mobile App Development.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>
 
             </div>
         </div>
-
     </section>
-    <div class="div-clear"></div>
-    <hr class="common-hr">
-    <section id = "personal-section"> 
-        <div class = "content">
-            <div class = "left-div">
-                <h3>Education</h3>
-                
-            </div>
-            <div class ="right-div">
-               <div class="edu1-right">
-                <h4>SSC</h4>
-                <h4>2016</h4>
-                <p>Board of Rajshahi</p>
+    <!-- Services section exit -->
 
-               </div>
-               <div class="edu2-right">
-                <h4>HSC</h4>
-                <h4>2018</h4>
-                <p>Board of Rajshahi</p>
-
+    <!-- Portfolio Sectrion -->
+    <section id="portfolio" class="portfolio_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle">My Complete project</span>
+                    <h2>My Latest Project</h2>
+                    <p>There are some project,<br class="d-none d-md-block">
+                        that is done by me.</p>
+                </div>
             </div>
-            <div class="edu3-right">
-                <h4>B.Sc in Computer Science & Engineering</h4>
-                <h4>2019-2024</h4>
-                <p>University of Rajshahi</p>
-
-            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span style="background-image: url('./image/foddies.jpg')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span style="background-image: url('./image/ecommerce.png')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span
+                            style="background-image: url('./image/jewellay.png')"></span>
+                    </div>
+                </div> 
 
             </div>
         </div>
-
     </section>
-    <div class="div-clear"></div>
-    <hr class="common-hr">
-    <section id = "personal-section"> 
-        <div class = "content">
-            <div class = "left-div">
-                <h3>Hobbies</h3>
+    <!-- Portfolio Section exit -->
+
+    <!-- Contact section -->
+    <section id="contact" class="contact_wrapper">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+                    <span class="subtitle">Let's Say Hi</span>
+                    <h2>Hire Me.</h2>
+                    <div class="row call_details mb-4">
+                        <label class="col-sm-3">Call us directly:</label>
+                        <div class="col-sm-9 mb-3 mb-lg-2">
+                            <a href="javascript:void(0)">01752862343</a>
+                        </div>
+                        <label class="col-sm-3">Contact Email:</label>
+                        <div class="col-sm-9 mb-3 mb-lg-2">
+                            <a href="mailto:example@gmail.com">khatunbizli892@gmail.com</a>
+                        </div>
+                    </div> 
+                    <form>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" placeholder="Your Name..." autocomplete="off">
+                        </div>
+                        <div class="mb-4">
+                            <input type="number" class="form-control" placeholder="Your Phone..." autocomplete="off">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" placeholder="Your Email..." autocomplete="off">
+                        </div>
+                        <div class="mb-4">
+                            <input cols="40" rows="4" class="form-control" id="message"
+                                placeholder="Write a Message..." autocomplete="off">
+                        </div>
+                        <button type="submit" class="main-btn">Submit</button>
+                    </form>
+                </div>
+                
                 
             </div>
-            <div class ="right-div">
-             <ul>
-                <li>Cooking</li>
-                <li>Reading Books</li>
-                <li>Sewing</li>
-             </ul>
+        </div>
+    </section>
+    <!-- contact section exit -->
 
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 text-center text-md-start">
+            
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center jus social-icon mb-3 mb-md-0">
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+              
             </div>
         </div>
-
     </section>
-    <div class="div-clear"></div>
-    <hr class="common-hr">
 
-    </main>
+    <!-- Footer section exit -->
 
-    <footer>
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 
-    </footer>
-
-   </div>
-   
-    
+    <!-- Custom Js Link -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
+
+
